@@ -13,11 +13,47 @@ nav a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
-nav a:first-child{
+nav a:hover{
+    color:rgb(255,173,97);
+    text-decoration: underline;
+}
+nav a:nth-child(1){
     color: black;
     font-size: 22pt;
     font-weight: 900;
 }
-nav a:nth-child(3){
-    color: blue;
+section{
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    background-color:blue;
+    height: 170px;
+    align-items: center;
+    border-radius: 10px;
+}
+section div input:focus{
+    background-color:rgb(255,173,97);
+}
+input::placeholder{
+    colo:rgb(255,173,97);
+    font-size: 8pt;
+}
+div input{
+    margin-bottom: 5px;
+    width: 95%;
+}
+div input:nth-child(4){
+    margin-top: 20px;
+    width: 70%;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 0px 9px;
+    color: rgb(255,173,97);
+    font weight:900;
 }
